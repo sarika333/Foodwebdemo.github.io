@@ -1,0 +1,121 @@
+*
+{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+}
+
+.hero
+{
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bg6.jpg);
+	background-position: centre;
+	background-size: cover;
+	overflow-x: hidden;
+	position:relative;
+}
+.nav-bar{
+	display:flex;
+	padding:10px 4px;
+}
+.nav-logo img{
+	width:155px;
+	float:left;
+	margin-left:70px;
+	margin-top:10px;
+
+}
+.navlinks
+{
+	flex:1;
+
+}
+.navlinks ul
+{
+	margin-left:50px;
+	display:inline;
+
+}
+.navlinks ul li 
+{
+	list-style:none;
+	display:inline-block;
+	padding: 8px 25px;
+}
+.navlinks ul a {
+	color:#fff;
+	text-decoration:none;
+	font-size:13px;
+	
+}
+.navlinks ul li::after{
+	content: '';
+	width: 0%;
+	height:2px;
+	background: yellow;
+	display: block;
+	margin: auto;
+	transition:0.5s;
+
+}
+.navlinks ul li:hover::after{
+	width:100%;
+	
+}
+.btn{
+	padding: 10px 20px;
+	border:0;
+	background: yellow;
+	font-weight: bold;
+	cursor: pointer;
+}
+.banner-title{
+	margin: 80px 130px;
+	color: #fff;
+}
+.banner-title h1{
+	font-size: 64px;
+	margin-bottom:30px;
+}
+.banner-title h1 span{
+	color:yellow;
+	
+}
+.vertical-bar{
+	height:100%;
+	background:#000;
+	top:0;
+	left:0;
+	position:absolute;
+}
+.search-icon{
+	height:60%;
+	width:80px;
+	
+}
+.search-icon .fa{
+	margin:45px 23px;
+	display:block;
+	color:#fff;
+	font-size:30px;
+	cursor:pointer;
+	
+}
+.social-icon{
+	height:35%;
+	width:80px;
+	background:yellow;
+	text-align:center;
+	padding-top:27%;
+	bottom:0;
+	position:absolute;
+}
+.social-icon .fa{
+	margin: 15px 23px;
+	display:block;
+	padding:8px;
+	border: 1px solid #000;
+	border-radius:50%;
+	cursor:pointer;
+	
+}
